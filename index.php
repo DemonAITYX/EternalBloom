@@ -6,7 +6,6 @@
         <title>Eternal Bloom</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="bootstrap-5.3.8-dist (1)/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
     </head>
@@ -241,6 +240,59 @@
                 </div>
             </div>
         </section>
+        <footer class="bg-dark text-light py-4">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <h3>About Us</h3>
+                    <p>Know more about us!</p>
+                    <p>0812-3456-7890</p> 
+                    <p class="mb-0">Kelompok 7</p>
+                </div>
+                <div class="col">
+                    <h4  class="pt-3 fw-bold">Menu</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">About</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Services</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="pt-3 fw-bold">More</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">FAQ</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4  class="pt-3 fw-bold">Categories</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Fresh Flowers</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Gift Hampers</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Special Occasions</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Flowers Bouqet</a></li>
+                </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4  class="pt-3 fw-bold" >Social Media</h4>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-light"><i class="bi bi-instagram fs-3 px-1"></i></a>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-light"><i class="bi bi-facebook fs-3 px-1"></i></i></a>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-light"><i class="bi bi-envelope fs-3 px-1"></i></a>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-light"><i class="bi bi-telephone fs-3 px-1"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <p>2025 © Kelompok 7. All Rights Reserved.</p>
+                <div>
+                  <a href="#" class="text-decoration-none text-light me-4">Terms of use</a>
+                  <a href="#" class="text-decoration-none text-light">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
     <script>
         const slider = document.getElementById("slider");
