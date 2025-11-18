@@ -455,6 +455,7 @@ nav {
 }
 
 .bou-card {
+    position: relative;
     flex: 0 0 auto;
     width: 20rem;
     height: 25rem;
@@ -464,13 +465,18 @@ nav {
     cursor: pointer;
 }
 
-.img-shell {
-    background: red;
-    padding: 5px 20px;
-}
-
 #bouquet .sale-tag {
     position: absolute;
+    margin: 0 auto;
+    width: max-content;
+    background-color: #9f2222;
+    color: #fff;
+    padding-block: 1px;
+    padding-inline: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    z-index: 5;
+    transition: 0.3s;
 }
 
 .bou-card img {
