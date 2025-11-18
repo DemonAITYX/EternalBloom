@@ -29,8 +29,6 @@ nav {
     z-index: 10;
 }
 
-
-
 .nav-container {
     display: flex;
     justify-content: space-evenly;
