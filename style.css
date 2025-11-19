@@ -127,9 +127,10 @@ nav {
     text-decoration: none;
     color: #D4AF37;
     border: #D4AF37 solid 1px;
+    font-family: 'Cinzel';
     border-radius: 1px;
-    font-size: 18px;
-    padding: 15px 25px;
+    font-size: 14px;
+    padding: 10px 25px;
     margin-left: 38%;
     cursor: pointer;
     transition: .2s ease;
@@ -186,9 +187,8 @@ nav {
 .hamper-title {
     color: #D4AF37;
     font-size: 5rem;
+    margin-top: 4rem;
     font-family: 'Cinzel';
-    padding: 10px;
-    margin: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 5px;
     text-align: center;
@@ -213,7 +213,7 @@ nav {
     scroll-behavior: smooth;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 1rem;
+    padding-top: 2px;
     width: auto;
     border-radius: 12px;
     order: 2;
@@ -221,7 +221,7 @@ nav {
 
 .arrow {
     position: absolute;
-    top: 48%;
+    top: 53%;
     transform: translateY(-50%);
     background: #D4AF37;
     color: black;
@@ -415,8 +415,7 @@ nav {
     color: #D4AF37;
     font-size: 5rem;
     font-family: 'Cinzel';
-    padding: 10px;
-    margin: 30px;
+    margin-block: 4rem 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 3px;
     text-align: center;
@@ -425,16 +424,14 @@ nav {
 .bou-container {
     display: flex;
     height: 35rem;
+    background: #0b1b38;
     overflow-y: auto;
     padding-block: 15px;
-    padding-inline: 30px;
     border-radius: 10px;
-    row-gap: 20px;
-    column-gap: 1px;
     margin-inline: 115px;
     margin-bottom: 50rem;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
     flex-wrap: wrap;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -447,6 +444,7 @@ nav {
 
 .bou-container:hover {
     box-shadow: 1px 1px 40px #867026;
+    transform: scale(1.01)
 }
 
 .bou-card {
@@ -454,6 +452,7 @@ nav {
     flex: 0 0 auto;
     width: 20rem;
     height: 25rem;
+    color: #D4AF37;
     border-radius: 10px;
     overflow: hidden;
     background: #16346b;
