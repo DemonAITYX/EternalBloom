@@ -23,9 +23,7 @@ nav {
     backdrop-filter: blur(200px);
     top: 0;
     width: 100%;
-    padding: 20;
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding: 1px;
     z-index: 10;
 }
 
@@ -33,15 +31,14 @@ nav {
     display: flex;
     justify-content: space-evenly;
     max-width: 800px;
-    gap: 2rem;
-    margin: 0 2rem;
+    gap: 1rem;
     padding: 0.2px 10px;
 }
 
 .logo {
-    height: 70px;
+    height: 75px;
     width: auto;
-    padding-bottom: 10px;
+    margin-left: 10px;
     display: block;
 }
 
@@ -49,6 +46,7 @@ nav {
     display: flex;
     font-family: 'Cinzel';
     font-size: 23px;
+    margin-top: 1rem;
     list-style: none;
 }
 
@@ -58,7 +56,6 @@ nav {
     font-size: 27px;
     text-decoration: none;
     padding: 0 2rem;
-    margin: 12px;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -224,7 +221,7 @@ nav {
 
 .arrow {
     position: absolute;
-    top: 45%;
+    top: 48%;
     transform: translateY(-50%);
     background: #D4AF37;
     color: black;
@@ -485,6 +482,11 @@ nav {
     transition: .5s;
 }
 
+.intro-b {
+    background: red;
+    display: block;
+    overflow: hidden;
+}
 
 
 
