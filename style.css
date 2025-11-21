@@ -269,7 +269,8 @@ nav {
 
 #hamper .sale-tag {
     position: absolute;
-    margin: 0 auto;
+    margin-left: -3px;
+    margin-top: -3px;
     width: max-content;
     background-color: #9f2222;
     color: #fff;
@@ -278,7 +279,7 @@ nav {
     padding-inline: 20px;
     border-radius: 4px;
     font-size: 16px;
-    z-index: 5;
+    z-index: 1;
     transition: 0.3s;
 }
 
@@ -342,6 +343,7 @@ nav {
     bottom: 0px;
     background: rgb(27, 27, 27);
     color: #D4AF37;
+    z-index: 2;
     transition: .3s;
 }
 
@@ -444,30 +446,40 @@ nav {
 
 .bou-container:hover {
     box-shadow: 1px 1px 40px #867026;
-    transform: scale(1.01)
+    transform: scale(1.010)
 }
 
 .bou-card {
     position: relative;
     flex: 0 0 auto;
     width: 20rem;
-    height: 25rem;
+    padding-bottom: 20px;
     color: #D4AF37;
     border-radius: 10px;
     overflow: hidden;
-    background: #16346b;
+    transition: 0.3s ease;
     cursor: pointer;
+}
+
+.new-price {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgb(14, 176, 14);
+}
+
+#bouquet h3 {
+    text-align: center;
 }
 
 #bouquet .sale-tag {
     position: absolute;
-    margin: 0 auto;
     width: max-content;
     background-color: #9f2222;
     color: #fff;
-    padding-block: 1px;
-    padding-inline: 20px;
-    border-radius: 4px;
+    margin-top: -5px;
+    padding-inline: 9.1rem;
+    border-radius: 10px;
     font-size: 16px;
     z-index: 5;
     transition: 0.3s;
@@ -475,16 +487,21 @@ nav {
 
 .bou-card img {
     height: 20rem;
-    width: auto;
+    width: 100%;
+    object-fit: cover;
+    padding: 0 40px;
     display: block;
     border-radius: 3px;
-    transition: .5s;
 }
 
 .intro-b {
-    background: red;
+    background: #16346b;
     display: block;
+    font-family: 'Cinzel';
+    border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 
