@@ -465,7 +465,7 @@ nav {
     text-align: center;
     padding-left: 10px;
     font-size: 20px;
-    color: rgb(14, 176, 14);
+    color: white;
 }
 
 #bouquet h3 {
@@ -491,18 +491,55 @@ nav {
     object-fit: cover;
     padding: 0 40px;
     display: block;
-    border-radius: 3px;
+    background: #16346b;
 }
 
 .intro-b {
     background: #16346b;
     display: block;
     font-family: 'Cinzel';
-    border-radius: 10px;
     overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     position: relative;
     z-index: 1;
 }
 
+.bou-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 10px;
+}
 
+.bou-buy {
+    text-decoration: none;
+    background: #0b1b38;
+    padding-inline: 20px;
+    padding-block: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #D4AF37;
+}
+
+.bou-buy:hover {
+    transform: scale(1.05);
+}
+
+.bou-cart {
+    text-decoration: none;
+    background: #0b1b38;
+    padding-inline: 12px;
+    padding-block: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    color: #D4AF37;
+}
+
+.bou-cart:hover {
+    transform: scale(1.06);
+}
 
