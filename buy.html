@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <title>Buy Flowers</title>
+</head>
+<style>
+    nav {
+    position: fixed;
+    background: linear-gradient(#0b1b38, black);
+    backdrop-filter: blur(200px);
+    top: 0;
+    width: 100%;
+    padding: 1px 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    }
+
+    .logo {
+    height: 110px;
+    width: auto;
+    display: block;
+    margin: 0 0 15px 0;
+    padding: 3px;
+    margin-bottom: 1px;
+    }
+
+    .nav-links {
+    display: flex;
+    font-family: 'Cinzel';
+    font-size: 23px;
+    margin-top: 5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    }
+
+.nav-links a {
+    display: flex;
+    color: white;
+    font-size: 27px;
+    text-decoration: none;
+    padding: 1px 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0;
+    }
+
+    label{
+        color: gold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: block;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .e-card{
+        height: auto;
+    }
+
+    .e-container{
+       display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+       gap: 10px;
+       padding: 100px;
+       margin-top: 70px;
+    }
+
+    /* .label{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 0;
+    } */
+</style>
+<body>
+     <header>
+            <nav>
+                    <img src="Logo3.png" alt="Logo" class="logo">
+                        <ul class="nav-links">
+                            <li><a href="#menu" style="text-decoration: double gold;">Menu</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#hamper">Hampers</a></li>
+                            <li><a href="#bouquet">Bouquets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+            </nav>
+        </header>
+
+         <section>
+            <div class="e-container">
+                <div class="e-card">
+                        <img src="val (1).jpg">
+                    <h1 class="pro-name">Valentine</h1>
+                    <label for="price">Rp. 300.000</label>
+                </div>
+                </section>
+
+                        <!-- <div class="label">
+                            <label for="namabunga">Flowers</label>
+                            <label for="ukm_psulos">PS Ulos</label>
+                            <label for="ukm_kompas">Kompas USU</label>
+                            <label for="ukm_badminton">Badminton</label>
+                            <label for="ukm_panahan">Panahan</label>
+                        </div> -->
+</body>
+</html>
+
+<script href="Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
