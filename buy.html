@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <title>Buy Flowers</title>
+</head>
+<style>
+    nav {
+    position: fixed;
+    background: linear-gradient(#0b1b38, black);
+    backdrop-filter: blur(200px);
+    top: 0;
+    width: 100%;
+    padding: 1px 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    }
+
+    .logo {
+    height: 110px;
+    width: auto;
+    display: block;
+    margin: 0 0 15px 0;
+    padding: 3px;
+    margin-bottom: 1px;
+    }
+
+    .nav-links {
+    display: flex;
+    font-family: 'Cinzel';
+    font-size: 23px;
+    margin-top: 5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    }
+
+.nav-links a {
+    display: flex;
+    color: white;
+    font-size: 27px;
+    text-decoration: none;
+    padding: 1px 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0;
+    }
+
+    .e-card{
+        height: auto;
+    }
+
+    img {
+    padding: 100px 20px;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    height: 600px; /* Menjaga rasio aspek visual */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .e-container{
+       display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+       gap: 10px;
+       padding: 100px;
+       margin-top: 70px;
+    }
+
+</style>
+<body>
+     <header>
+            <nav>
+                    <img src="Logo3.png" alt="Logo" class="logo">
+                        <ul class="nav-links">
+                            <li><a href="#menu" style="text-decoration: double gold;">Menu</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#hamper">Hampers</a></li>
+                            <li><a href="#bouquet">Bouquets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+            </nav>
+        </header>
+
+    <div class="container">
+        <div class="product-container">
+            <!-- Kolom Kiri (Gambar Produk) -->
+            <div class="product-image">
+                <!-- Placeholder untuk gambar vas -->
+                <div class="image-placeholder"><img src="blue.jpg" alt="bunga"></div>
+            </div>
+
+            <!-- Kolom Kanan (Detail Produk) -->
+            <div class="product-details">
+                <h1>Center Of Attention Bud Vase</h1>
+                <p class="price">**$45.00**</p>
+                
+                <p>Add a touch of texture to your Thanksgiving table with our Center Of Attentionbud vase collection! Perfect for a playful and unique Thanksgiving celebration.</p>
+                
+                <p>Priced individually.</p>
+                
+                <p class="designer-rec">Designer Recommendation: 5 per 60" table, or 7-9 per 8-10' table.</p>
+                
+                <p class="delivery-info">***A $75 minimum is required for delivery.*</p>
+
+                <!-- Formulir Kuantitas dan Tombol -->
+                <div class="form-section">
+                    <label for="qty">Qty</label>
+                    <div class="qty-selector">
+                        <button>-</button>
+                        <input type="text" id="qty" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+
+                <!-- Info Pickup -->
+                <div class="pickup-info">
+                    <span class="checkmark">✔</span>
+                    Pickup available at **461 Shawmut Avenue**
+                    <a href="#">View store information.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script href="Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
