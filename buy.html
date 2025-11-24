@@ -54,27 +54,21 @@
     margin: 0;
     }
 
-    label{
-        color: gold;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 25px;
-        padding: 5px;
-    }
-
-    img{
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        display: block;
-        border-radius: 8px;
-        object-fit: cover;
-    }
-
     .e-card{
         height: auto;
     }
+
+    img {
+    padding: 100px 20px;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    height: 600px; /* Menjaga rasio aspek visual */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
     .e-container{
        display: grid;
@@ -84,20 +78,6 @@
        margin-top: 70px;
     }
 
-    .float-kiri {
-        float: right;
-        margin-right: 200px; 
-        width: 200px;
-    }
-
-
-    /* .label{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 0;
-    } */
 </style>
 <body>
      <header>
@@ -113,27 +93,47 @@
             </nav>
         </header>
 
-         <section>
-            <div class="e-container">
-                <div class="e-card">
-                        <img src="val (1).jpg">
-                    <h1 class="pro-name">Valentine</h1>
-                    <label for="price">Rp. 300.000</label>
+    <div class="container">
+        <div class="product-container">
+            <!-- Kolom Kiri (Gambar Produk) -->
+            <div class="product-image">
+                <!-- Placeholder untuk gambar vas -->
+                <div class="image-placeholder"><img src="blue.jpg" alt="bunga"></div>
+            </div>
+
+            <!-- Kolom Kanan (Detail Produk) -->
+            <div class="product-details">
+                <h1>Center Of Attention Bud Vase</h1>
+                <p class="price">**$45.00**</p>
+                
+                <p>Add a touch of texture to your Thanksgiving table with our Center Of Attentionbud vase collection! Perfect for a playful and unique Thanksgiving celebration.</p>
+                
+                <p>Priced individually.</p>
+                
+                <p class="designer-rec">Designer Recommendation: 5 per 60" table, or 7-9 per 8-10' table.</p>
+                
+                <p class="delivery-info">***A $75 minimum is required for delivery.*</p>
+
+                <!-- Formulir Kuantitas dan Tombol -->
+                <div class="form-section">
+                    <label for="qty">Qty</label>
+                    <div class="qty-selector">
+                        <button>-</button>
+                        <input type="text" id="qty" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
                 </div>
-                </section>
-<p class="float-kiri">
-    Bunga Berbicara Saat Kata Tak Mampu..
-</p>
 
-                        <!-- <div class="label">
-                            <label for="namabunga">Flowers</label>
-                            <label for="ukm_psulos">PS Ulos</label>
-                            <label for="ukm_kompas">Kompas USU</label>
-                            <label for="ukm_badminton">Badminton</label>
-                            <label for="ukm_panahan">Panahan</label>
-                        </div> -->
-
-
+                <!-- Info Pickup -->
+                <div class="pickup-info">
+                    <span class="checkmark">✔</span>
+                    Pickup available at **461 Shawmut Avenue**
+                    <a href="#">View store information.</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
