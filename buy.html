@@ -3,34 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.css">
     <title>Buy Flowers</title>
 </head>
 <style>
-    nav {
-    position: fixed;
-    background: linear-gradient(#0b1b38, black);
-    backdrop-filter: blur(200px);
-    top: 0;
-    width: 100%;
-    padding: 1px 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
-    }
-
-    .logo {
-    height: 110px;
-    width: auto;
-    display: block;
-    margin: 0 0 15px 0;
-    padding: 3px;
-    margin-bottom: 1px;
-    }
-
     .nav-links {
     display: flex;
     font-family: 'Cinzel';
@@ -78,19 +55,29 @@
        margin-top: 70px;
     }
 
+    .add-to-cart{
+       text-decoration: none;
+       background-color: #0b1b38;
+       font-family: cinzel;
+    }
+
+    .container{
+         font-family: cinzel;
+    }
+
+    #total-price-display{
+        font-weight: bold;
+        font-size: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
 </style>
 <body>
      <header>
-            <nav>
-                    <img src="Logo3.png" alt="Logo" class="logo">
-                        <ul class="nav-links">
-                            <li><a href="#menu" style="text-decoration: double gold;">Menu</a></li>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#hamper">Hampers</a></li>
-                            <li><a href="#bouquet">Bouquets</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-            </nav>
+
         </header>
 
     <div class="container">
@@ -100,7 +87,8 @@
             </div>
             <div class="product-details">
                 <h1>Center Of Attention Bud Vase</h1>
-                <p class="price">**Rp. 300.000**</p>
+                <h3>IDR:</h3>
+                <span id ="total-price-display">300.000;</span>
                 
                 <p>Add a touch of texture to your Thanksgiving table with our Center Of Attentionbud vase collection! Perfect for a playful and unique Thanksgiving celebration.</p>
                 
@@ -113,11 +101,11 @@
                 <div class="form-section">
                     <label for="qty">Qty</label>
                     <div class="qty-selector">
-                        <button>-</button>
-                        <input type="text" id="qty" value="1" readonly>
-                        <button>+</button>
+                        <button class="minus" onclick="updateQuantity(-1)">-</button>
+                        <input type="number" id="qty" value="1" min="1" max="9">
+                        <button class="plus" onclick="updateQuantity(+1)">+</button>
                     </div>
-                    <button class="add-to-cart"><a href="checkout.html">ADD TO CART</a></button>
+                    <a class="add-to-cart" href="checkout.html">ADD TO CART</a>
                 </div>
 
                 <div class="pickup-info">
@@ -130,5 +118,57 @@
     </div>
 </body>
 </html>
+<script>
+    // Harga dasar produk dalam format angka murni (misalnya, 300000 untuk Rp 300.000)
+    const BASE_PRICE = 300000;
+
+    function calculateTotal() {
+        // Dapatkan elemen kuantitas dan harga total
+        const quantityInput = document.getElementById('qty');
+        const priceDisplay = document.getElementById('total-price-display');
+
+        // Dapatkan nilai kuantitas saat ini
+        const quantity = Number(quantityInput.value) || 0;
+
+        // Hitung total harga
+        const total = quantity * BASE_PRICE;
+
+        // Format total harga ke format Rupiah (menggunakan titik pemisah ribuan)
+        const formattedTotal = total.toLocaleString('id-ID', { 
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+        });
+
+        // Perbarui teks di elemen harga HTML
+        priceDisplay.textContent = formattedTotal;
+    }
+    
+    function updateQuantity(change) {
+        const quantityInput = document.getElementById('qty');
+        let currentValue = Number(quantityInput.value) || 0;
+        const newValue = currentValue + change;
+
+        // Akses properti min/max langsung dari elemen quantityInput
+        const min = Number(quantityInput.min);
+        const max = Number(quantityInput.max);
+
+        if (max && newValue > max) {
+            quantityInput.value = max;
+        } else if (min && newValue < min) {
+           quantityInput.value = min;
+        } else {
+            quantityInput.value = newValue;
+        }
+
+        // PENTING: Panggil fungsi calculateTotal setiap kali kuantitas berhasil diubah
+        calculateTotal();
+    }
+
+    // Opsional: Panggil fungsi calculateTotal saat halaman dimuat pertama kali 
+    // untuk memastikan harga awal sudah benar.
+    document.addEventListener('DOMContentLoaded', (event) => {
+        calculateTotal();
+    });
+</script>
 
 <script href="Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
