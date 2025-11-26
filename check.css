@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #16346b;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    margin-top: 170px;
+}
+
+.left {
+    width: 600px;
+    height: auto;
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+    margin-top: -100px;
+}
+
+.cart-item img {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.item-info {
+    flex: 1;
+    margin-top: 100px;
+}
+
+.remove {
+    color: red;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.right {
+    width: 40%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 90px;
+    margin: 10px 0;
+}
+
+.delivery-options {
+    display: flex;
+    gap: 10px;
+}
+
+.delivery, .pickup {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    background: #9d2626;
+    border-radius: 6px;
+}
+
+.delivery.active {
+    background: #376B80;
+    color: white;
+}
+
+.date-picker {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.checkout {
+    width: 100%;
+    padding: 15px;
+    background: #D4AF37;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.continue {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #D4AF37;
+}
+
+.icons span {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.signup {
+    margin-top: 15px;
+}
+
+
+.delivery-options button {
+    background-color: #e6e6e6; /* abu abu muda */
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+.delivery-options button:hover {
+    background-color: #D4AF37;
+    color: white;
+}
+
+
+.delivery-options button.active {
+    background-color: #D4AF37;
+    color: white;
+}
+
+.icons-img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons-img:hover {
+    transform: scale(1.1);
+}
+
+ nav {
+    position: fixed;
+    background: linear-gradient(#0b1b38, black);
+    backdrop-filter: blur(200px);
+    top: 0;
+    width: 100%;
+    padding: 1px 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    }
+
+    .logo {
+    height: 110px;
+    width: auto;
+    display: block;
+    margin: 0 0 15px 0;
+    padding: 3px;
+    margin-bottom: 1px;
+    }
+
+    .nav-links {
+    display: flex;
+    font-family: 'Cinzel';
+    font-size: 23px;
+    margin-top: 5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    }
+
+.nav-links a {
+    display: flex;
+    color: white;
+    font-size: 27px;
+    text-decoration: none;
+    padding: 1px 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0;
+    }
+
+    .e-card{
+        height: auto;
+    }
+
+    img {
+    padding: 100px 20px;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    height: 600px; /* Menjaga rasio aspek visual */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .e-container{
+       display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+       gap: 10px;
+       padding: 100px;
+       margin-top: 70px;
+    }
