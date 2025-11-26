@@ -13,9 +13,79 @@ body {
     gap: 40px;
     background-color: white;
     width: 100%;
-    height: 500px;
-    margin-top: 170px;
+    height: 550px;
+    margin-top: 175px;
 }
+
+ nav {
+    position: fixed;
+    background: linear-gradient(#0b1b38, black);
+    backdrop-filter: blur(200px);
+    top: 0;
+    width: 100%;
+    padding: 1px 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    }
+
+    .logo {
+    height: 110px;
+    width: auto;
+    display: block;
+    margin: 0 0 15px 0;
+    padding: 3px;
+    margin-bottom: 1px;
+    }
+
+    .nav-huruf {
+    display: flex;
+    font-family: 'Cinzel';
+    font-size: 23px;
+    margin-top: 5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    }
+
+.nav-huruf a {
+    display: flex;
+    color: white;
+    font-size: 27px;
+    text-decoration: none;
+    padding: 1px 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0;
+    }
+
+    .e-card{
+        height: auto;
+    }
+
+    img {
+    padding: 100px 20px;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    height: 600px; /* Menjaga rasio aspek visual */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .e-container{
+       display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+       gap: 10px;
+       padding: 100px;
+       margin-top: 70px;
+    }
 
 .left {
     width: 600px;
@@ -26,23 +96,38 @@ body {
     display: flex;
     gap: 10px;
     margin-top: -100px;
+    font-family: cinzel;
 }
 
 .cart-item img {
-    width: 300px;
-    height: 450px;
-    border-radius: 10px;
+    width: 380px;
+    height: 600px;
 }
 
 .item-info {
     flex: 1;
-    margin-top: 100px;
+    margin-top: 170px;
+}
+.shop{
+    padding: 20px;
+    margin-top: -30px;
+    font-weight: bold;
+    font-family: cinzel;
 }
 
-.remove {
-    color: red;
-    cursor: pointer;
-    margin-bottom: 10px;
+.btn-info {
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  position: absolute;
+  left: 170px;
+  top: 190px;
+}
+
+.btn-info:hover {
+  background-color: red;
 }
 
 .quantity button {
@@ -53,6 +138,7 @@ body {
 .price {
     font-size: 18px;
     margin: 10px 0;
+    font-family: cinzel;
 }
 
 
@@ -61,12 +147,15 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
+    margin-top: -33px;
+    font-family: cinzel;
 }
 
 textarea {
     width: 100%;
     height: 90px;
     margin: 10px 0;
+    font-family: cinzel;
 }
 
 .delivery-options {
@@ -156,73 +245,3 @@ textarea {
 .icons-img:hover {
     transform: scale(1.1);
 }
-
- nav {
-    position: fixed;
-    background: linear-gradient(#0b1b38, black);
-    backdrop-filter: blur(200px);
-    top: 0;
-    width: 100%;
-    padding: 1px 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
-    }
-
-    .logo {
-    height: 110px;
-    width: auto;
-    display: block;
-    margin: 0 0 15px 0;
-    padding: 3px;
-    margin-bottom: 1px;
-    }
-
-    .nav-links {
-    display: flex;
-    font-family: 'Cinzel';
-    font-size: 23px;
-    margin-top: 5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
-    flex-direction: row;
-    }
-
-.nav-links a {
-    display: flex;
-    color: white;
-    font-size: 27px;
-    text-decoration: none;
-    padding: 1px 2rem;
-    transition: 0.3s;
-    cursor: pointer;
-    margin: 0;
-    }
-
-    .e-card{
-        height: auto;
-    }
-
-    img {
-    padding: 100px 20px;
-    text-align: center;
-    color: #555;
-    font-weight: bold;
-    height: 600px; /* Menjaga rasio aspek visual */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-    .e-container{
-       display: grid;
-       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-       gap: 10px;
-       padding: 100px;
-       margin-top: 70px;
-    }
