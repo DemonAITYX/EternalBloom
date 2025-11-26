@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+ <header>
+            <nav>
+                    <img src="Logo3.png" alt="Logo" class="logo">
+                        <ul class="nav-links">
+                            <li><a href="#menu" style="text-decoration: double gold;">Menu</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#hamper">Hampers</a></li>
+                            <li><a href="#bouquet">Bouquets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+            </nav>
+        </header>
+<div class="container">
+    <div class="left">
+        <h2 class="shop">Shopping Cart</h2>
+
+        <div class="cart-item">
+            <img src="WhatsApp Image 2025-11-26 at 08.08.19.jpeg" alt="Bouquet">
+
+            <div class="item-info">
+                <div class="remove">Remove ✕</div>
+                <h3>Makeup Set</h3>
+                <p class="color">Color Palette: <span>Seasonal Brights</span></p>
+
+                <p class="price">Rp. 1.250.000</p>
+
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+
+                <p class="total">Total: <strong>Rp. 1.250.000</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE CHECKOUT -->
+    <div class="right">
+        <h2>Subtotal: Rp. 1.250.000</h2>
+
+        
+        <p class="note-info">Orders will be processed in Rp.</p>
+
+        <label>Add a card message / order notes:</label>
+        <textarea></textarea>
+
+        <p class="delivery-label">Select local delivery OR in-store pickup:</p>
+
+        <div class="delivery-options">
+            <button class="delivery active"> Local Delivery</button>
+            <button class="pickup"> In-Store Pickup</button>
+        </div>
+
+        <input type="date" class="date-picker">
+
+        <button class="checkout">Checkout</button>
+
+        <a href="#" class="continue">CONTINUE SHOPPING</a>
+    </div>
+
+</div>
+
+<script>
+    
+    let price = 1250000; 
+    let qty = 1;
+
+    const qtyText = document.querySelector(".quantity span");
+    const subtotalText = document.querySelector(".right h2");
+    const totalItemText = document.querySelector(".item-info .total strong");
+
+    
+    const plusBtn = document.querySelector(".quantity button:last-child");
+    const minusBtn = document.querySelector(".quantity button:first-child");
+
+   
+    function updateAll() {
+        qtyText.textContent = qty;
+
+        let subtotal = price * qty;
+
+      
+        subtotalText.innerHTML = "Subtotal: Rp. " + subtotal.toLocaleString("id-ID");
+
+       
+        totalItemText.textContent = "Rp. " + subtotal.toLocaleString("id-ID");
+    }
+
+    
+    plusBtn.addEventListener("click", () => {
+        qty++;
+        updateAll();
+    });
+
+    
+    minusBtn.addEventListener("click", () => {
+        qty--;
+        if (qty < 1) qty = 1;
+        updateAll();
+    });
+
+    
+    document.querySelector(".checkout").addEventListener("click", () => {
+        window.location.href = "ordersuccess.html"; 
+       
+    });
+    
+</script>
+
+<script>
+    const deliveryBtn = document.querySelector(".delivery");
+    const pickupBtn = document.querySelector(".pickup");
+
+    deliveryBtn.addEventListener("click", () => {
+        deliveryBtn.classList.add("active");
+        pickupBtn.classList.remove("active");
+    });
+
+    pickupBtn.addEventListener("click", () => {
+        pickupBtn.classList.add("active");
+        deliveryBtn.classList.remove("active");
+    });
+</script>
+</body>
+</html>
