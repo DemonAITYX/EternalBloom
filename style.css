@@ -77,6 +77,19 @@ nav {
     top: 250px;
 }
 
+.pro-icon {
+    display: flex;
+    align-items: center;
+    padding-inline: 45%;
+}
+
+.pro-icon img {
+    width: 60px;
+    height: 60px;
+    
+
+}
+
 #home .hero-desc {
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
