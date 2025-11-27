@@ -29,7 +29,6 @@
             <img src="WhatsApp Image 2025-11-26 at 08.08.19.jpeg" alt="Bouquet">
 
             <div class="item-info">
-                <!-- <div class="remove">Remove ✕</div> -->
                 <h3>Makeup Set</h3>
                 <p class="color">Color Palette: <span>Seasonal Brights</span></p>
 
@@ -63,13 +62,12 @@
             <button class="pickup"> In-Store Pickup</button>
         </div>
 
-        <input type="date" class="date-picker">
+        <input type="date" class="date-picker" required>
 
         <button class="checkout">Checkout</button>
 
         <a href="#" class="continue">CONTINUE SHOPPING</a>
     </div>
-
 </div>
 
 </body>
@@ -113,8 +111,13 @@
         updateAll();
     });
 
-    
-    document.querySelector(".checkout").addEventListener("click", () => {
+        document.querySelector(".checkout").addEventListener("click", () => {
+            const inputs = document.querySelectorAll(".date-picker");
+            const lengkap = [...inputs].every(i => i.value !== "");
+            if(!lengkap){
+                alert("Tanggal tidak boleh kosong!");
+                return;
+            }
         window.location.href = "ordersuccess.html"; 
        
     });

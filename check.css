@@ -141,6 +141,43 @@ body {
     font-family: cinzel;
 }
 
+.quantity button {
+    width: auto; 
+    height: auto; 
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    width: fit-content; 
+}
+
+.quantity button {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    transition: background-color 0.2s;
+}
+
+.quantity button:hover {
+    background-color: #eaeaea;
+}
+
+.quantity span {
+    width: 40px; 
+    padding: 8px 0;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    font-family: cinzel; 
+}
 
 .right {
     width: 40%;
@@ -212,7 +249,7 @@ textarea {
 
 
 .delivery-options button {
-    background-color: #e6e6e6; /* abu abu muda */
+    background-color: #e6e6e6; 
     border: none;
     padding: 12px 20px;
     margin-right: 10px;
@@ -244,4 +281,55 @@ textarea {
 
 .icons-img:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        height: auto;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cart-item img {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .item-info {
+        margin-top: 20px;
+    }
+
+    .shop {
+        margin-top: 0;
+    }
+
+    .nav-huruf {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .nav-huruf a {
+        padding: 5px 0;
+    }
+
+    .delivery-options {
+        flex-wrap: wrap;
+    }
+
+    .btn-info {
+        position: static;
+        margin-bottom: 10px;
+    }
 }
