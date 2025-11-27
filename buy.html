@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.css">
     <title>Buy Flowers</title>
 </head>
 <style>
-    .nav-links {
-    display: flex;
-    font-family: 'Cinzel';
-    font-size: 23px;
-    margin-top: 5rem;
-    list-style: none;
+
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+    body {
     margin: 0;
     padding: 0;
-    justify-content: space-evenly;
-    flex-direction: row;
+    background: #0b1b38;
+    height: 100%;
+    overflow-x: hidden;
     }
 
-.nav-links a {
-    display: flex;
-    color: white;
-    font-size: 27px;
-    text-decoration: none;
-    padding: 1px 2rem;
-    transition: 0.3s;
-    cursor: pointer;
-    margin: 0;
+    .back-btn {
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+        text-decoration: none;
+        align-items: center;
+        border-radius: 10px;
+        background: red;
+        padding: 10px 15px;
+        cursor: pointer;
+        transform: .2s ease;
     }
 
     .e-card{
@@ -38,49 +43,178 @@
     img {
     padding: 100px 20px;
     text-align: center;
-    color: #555;
+    color: #f9f9f9;
     font-weight: bold;
-    height: 600px; /* Menjaga rasio aspek visual */
+    height: 600px;
     width: 100%;
     display: flex;
+    border-radius: 8rem;
     align-items: center;
     justify-content: center;
 }
 
-    .e-container{
-       display: grid;
-       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-       gap: 10px;
-       padding: 100px;
-       margin-top: 70px;
-    }
-
-    .add-to-cart{
-       text-decoration: none;
-       background-color: #0b1b38;
-       font-family: cinzel;
-    }
-
     .container{
-         font-family: cinzel;
+        font-family: cinzel;
+        margin-block: 70px;
+        padding-top: 15px;
+        padding-bottom: 35px;
+        border-radius: 20px;
+        background: #f5f5f5;
     }
 
     #total-price-display{
         font-weight: bold;
         font-size: 40px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        align-items: center;
+        margin-inline: auto;
+        margin-bottom: 20px;
         width: fit-content;
     }
 
+    .breadcrumb {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 35px;
+}
+
+.image-placeholder {
+    padding: 100px 20px;
+    text-align: center;
+    font-weight: bold;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details {
+    flex: 2;
+    min-width: 300px;
+}
+
+.product-details h1 {
+    margin-bottom: 10px;
+    color: #9f8429d2;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#buy p {
+    margin-bottom: 10px;
+}
+
+.designer-rec {
+    font-style: italic;
+    color: #555;
+}
+
+.delivery-info {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.qty-selector {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.qty-selector button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.qty-selector input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.add-to-cart {
+    background-color: #D4AF37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+    background-color: #87712a;
+}
+
+.pickup-info {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.checkmark {
+    color: green;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.pickup-info a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .form-section {
+        flex-wrap: wrap;
+    }
+}
+
 </style>
 <body>
-     <header>
+    <header>
 
-        </header>
-
+    </header>
     <div class="container">
+        <a class="back-btn" href="index.html#hamper"><</a>
         <div class="product-container">
             <div class="product-image">
                 <div class="image-placeholder"><img src="blue.jpg" alt="bunga"></div>
@@ -102,7 +236,7 @@
                     <label for="qty">Qty</label>
                     <div class="qty-selector">
                         <button class="minus" onclick="updateQuantity(-1)">-</button>
-                        <input type="number" id="qty" value="1" min="1" max="9">
+                        <input type="number" id="qty" value="1" min="1" max="20">
                         <button class="plus" onclick="updateQuantity(+1)">+</button>
                     </div>
                     <a class="add-to-cart" href="checkout.html">ADD TO CART</a>
@@ -119,21 +253,16 @@
 </body>
 </html>
 <script>
-    // Harga dasar produk dalam format angka murni (misalnya, 300000 untuk Rp 300.000)
     const BASE_PRICE = 300000;
 
     function calculateTotal() {
-        // Dapatkan elemen kuantitas dan harga total
         const quantityInput = document.getElementById('qty');
         const priceDisplay = document.getElementById('total-price-display');
 
-        // Dapatkan nilai kuantitas saat ini
         const quantity = Number(quantityInput.value) || 0;
 
-        // Hitung total harga
         const total = quantity * BASE_PRICE;
 
-        // Format total harga ke format Rupiah (menggunakan titik pemisah ribuan)
         const formattedTotal = total.toLocaleString('id-ID', { 
             minimumFractionDigits: 0,
             maximumFractionDigits: 0

@@ -18,13 +18,10 @@
 }
 
 .image-placeholder {
-    
-    
     padding: 100px 20px;
     text-align: center;
-    
     font-weight: bold;
-    height: 400px; /* Menjaga rasio aspek visual */
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;

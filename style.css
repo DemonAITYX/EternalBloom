@@ -68,12 +68,18 @@ nav {
 .profil {
     display: flex;
     align-items: center;
+    margin-inline: 370px;
 }
 
 .pro-icon {
     width: 60px;
     height: 60px;
-    margin-inline: 380px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.pro-icon:hover {
+    transform: scale(0.90);
 }
 
 #home .hero-title h1 {
@@ -231,8 +237,8 @@ nav {
 #hamper .container-c {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 2rem;
-    margin-inline: 100px;
+    gap: 1px;
+    margin-inline: 180px;
     overflow-x: auto;
     scroll-snap-type: x-mandatory;
     scroll-behavior: smooth;
@@ -254,6 +260,7 @@ nav {
     border: none;
     border-radius: 50%;
     width: 50px;
+    margin-inline: 50px;
     height: 50px;
     cursor: pointer;
     z-index: 5;
@@ -265,9 +272,9 @@ nav {
     height: 480px;
     width: 390px;
     border-radius: 5px;
-    margin: 20px 0px;
+    margin: 5px 0px;
     border: 2px solid #D4AF37;
-    scale: 0.95;
+    scale: 0.90;
     overflow: hidden;
     cursor: pointer;
     transition: .3s;
@@ -456,7 +463,7 @@ nav {
     padding-block: 15px;
     border-radius: 10px;
     margin-inline: 115px;
-    margin-bottom: 50rem;
+    margin-bottom: 10rem;
     justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
@@ -477,6 +484,7 @@ nav {
 .bou-card {
     position: relative;
     flex: 0 0 auto;
+    scale: 0.95;
     width: 20rem;
     padding-bottom: 20px;
     color: #D4AF37;
@@ -513,6 +521,8 @@ nav {
 .bou-card img {
     height: 20rem;
     width: 100%;
+    border: #D4AF37 1.5px solid;
+    border-radius: 10px;
     object-fit: cover;
     padding: 0 40px;
     display: block;
