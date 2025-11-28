@@ -268,7 +268,6 @@
             maximumFractionDigits: 0
         });
 
-        // Perbarui teks di elemen harga HTML
         priceDisplay.textContent = formattedTotal;
     }
     
@@ -277,7 +276,6 @@
         let currentValue = Number(quantityInput.value) || 0;
         const newValue = currentValue + change;
 
-        // Akses properti min/max langsung dari elemen quantityInput
         const min = Number(quantityInput.min);
         const max = Number(quantityInput.max);
 
@@ -289,12 +287,9 @@
             quantityInput.value = newValue;
         }
 
-        // PENTING: Panggil fungsi calculateTotal setiap kali kuantitas berhasil diubah
         calculateTotal();
     }
 
-    // Opsional: Panggil fungsi calculateTotal saat halaman dimuat pertama kali 
-    // untuk memastikan harga awal sudah benar.
     document.addEventListener('DOMContentLoaded', (event) => {
         calculateTotal();
     });

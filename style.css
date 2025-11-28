@@ -190,15 +190,6 @@ nav {
 }
 /*hamper*/
 
-#hamper .cont-title {
-    background: linear-gradient(#0b1b38, black);
-    border-radius: 20px;
-    padding: 5px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .hamper-title {
     color: #D4AF37;
     font-size: 5rem;
@@ -423,7 +414,6 @@ nav {
 /*bouquets*/
 
 .cont-bou {
-    border-radius: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -489,24 +479,9 @@ nav {
     text-align: center;
 }
 
-#bouquet .sale-tag {
-    position: absolute;
-    width: max-content;
-    background-color: #9f2222;
-    color: #fff;
-    margin-top: -5px;
-    padding-inline: 9.1rem;
-    border-radius: 10px;
-    font-size: 16px;
-    z-index: 5;
-    transition: 0.3s;
-}
-
 .bou-card img {
     height: 20rem;
     width: 100%;
-    border: #D4AF37 1.5px solid;
-    border-radius: 10px;
     object-fit: cover;
     padding: 0 40px;
     display: block;
@@ -518,6 +493,7 @@ nav {
     display: block;
     font-family: 'Cinzel';
     overflow: hidden;
+    padding-top: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: relative;
@@ -564,5 +540,39 @@ nav {
 
 /*else*/
 .else-pro {
-    background: red;
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 1px;
+    margin-inline: 180px;
+    overflow-x: auto;
+    scroll-snap-type: x-mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px;
+    background: green;
+    width: auto;
+    border-radius: 12px;
+    order: 2;
+}
+
+.else-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: blue;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.else-card  {
+    flex: 0 0 auto;
+    height: 480px;
+    width: 390px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding-inline: 50px;
+
 }
