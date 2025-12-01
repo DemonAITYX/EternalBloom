@@ -15,6 +15,18 @@
     background: linear-gradient(#0b1b38, rgb(20, 20, 20));
  }
 
+.video-log { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+
  .container{
     position: relative;
     width: 850px;
@@ -107,7 +119,7 @@
  .btn{
     width: 100%;
     height: 48px;
-    background: #D4AF37;
+    background: #0b1b38;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     border: none;
@@ -150,7 +162,7 @@
     left: -250%;
     width: 300%;
     height: 100%;
-    background: #D4AF37;
+    background: #0b1b38;
     border-radius: 150px;
     z-index: 2;
     transition: 1.8s ease-in-out;
@@ -164,7 +176,7 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    color: #fff;
+    color: #D4AF37;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,6 +216,19 @@
     border: 2px solid #fff;
     box-shadow: none;
 }
+
+.back-btn{
+   position: fixed;
+   top: 12px;
+   left: 20px;  
+}
+
+.back-btn i{
+   font-size: 48px;  
+   color: #ffc60c;
+}
+
+
 
 @media screen and (max-width: 650px){
     .container{
