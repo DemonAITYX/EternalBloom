@@ -68,7 +68,7 @@ nav {
 .profil {
     display: flex;
     align-items: center;
-    margin-inline: 370px;
+    margin-inline: 560px;
 }
 
 .pro-icon {
@@ -111,7 +111,6 @@ nav {
     right: 0;
     width: 100%;
     height: 100%;
-    border-radius: px;
     object-fit: cover;
     z-index: -2;
 }
@@ -536,43 +535,4 @@ nav {
 
 .bou-cart:hover {
     transform: scale(1.06);
-}
-
-/*else*/
-.else-pro {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 1px;
-    margin-inline: 180px;
-    overflow-x: auto;
-    scroll-snap-type: x-mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding: 20px;
-    background: green;
-    width: auto;
-    border-radius: 12px;
-    order: 2;
-}
-
-.else-slide {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: blue;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
-}
-
-.else-card  {
-    flex: 0 0 auto;
-    height: 480px;
-    width: 390px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    padding-inline: 50px;
-
 }

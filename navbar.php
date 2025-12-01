@@ -7,8 +7,10 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#hamper">Hampers</a></li>
                         <li><a href="#bouquet">Bouquets</a></li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
+                    <a href="login.php" class="profil">
+                        <img src="profile.png" class="pro-icon">
+                    </a>
             </div>
         </nav>
-    </haeder>
+    </header>
