@@ -68,11 +68,11 @@ nav {
 .profil {
     display: flex;
     align-items: center;
-    margin-inline: 560px;
+    margin-inline: 540px;
 }
 
 .pro-icon {
-    width: 60px;
+    width: auto;
     height: 60px;
     cursor: pointer;
     transition: .2s ease;
