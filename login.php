@@ -33,9 +33,7 @@ if (isset($_POST['submit'])) {
         <source src="flower.mp4" type="video/mp4">
     </video>
     
-    <div class="back-btn">
-        <a href="index.html"><i class="bi bi-arrow-left-circle"></i></a>
-    </div>
+    
     <div class="container">
         <div class="form-box login">
             <form action="">
@@ -98,6 +96,10 @@ if (isset($_POST['submit'])) {
                 <button class="btn login-btn" style="border: 2px #D4AF37 solid; color: #D4AF37; font-family: 'Cinzel';">Login</button>
             </div>
         </div>
+        
+        <div class="back-btn">
+        <a href="index.php"><i class="bi bi-arrow-left-circle"></i></a>
+    </div>
     </div>
 
     <script src="login.js"></script>

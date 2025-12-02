@@ -23,7 +23,7 @@
                         <li><a href="#hamper">Hampers</a></li>
                         <li><a href="#bouquet">Bouquets</a></li>
                     </ul>
-                    <a href="login.html" class="profil">
+                    <a href="login.php" class="profil">
                         <img src="profile.png" class="pro-icon">
                     </a>
             </div>
@@ -114,7 +114,7 @@
                         <div class="intro">
                             <h1>Makeup Set</h1>
                             <p class="price">Rp. 1.250.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="buy.html" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
 
@@ -127,7 +127,7 @@
                         <div class="intro">
                             <h1>Chocolate Box</h1>
                             <p class="price">Rp. 1.250.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="buy.html" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
 
@@ -140,7 +140,7 @@
                         <div class="intro">
                             <h1 style="font-size: 27px;">Wedding Souvenir</h1>
                             <p class="price">Rp. 1.250.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="buy.html" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     <div class="card">
@@ -152,7 +152,7 @@
                         <div class="intro">
                             <h1 style="font-size: 27px;">Wedding Souvenir</h1>
                             <p class="price">Rp. 1.250.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="buy.html" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     <div class="card">
@@ -164,7 +164,7 @@
                         <div class="intro">
                             <h1 style="font-size: 27px;">Wedding Souvenir</h1>
                             <p class="price">Rp. 1.250.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="buy.html" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     
@@ -183,7 +183,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -194,7 +194,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -249,7 +249,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -260,7 +260,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                         <h3>Premium Flare Floral</h3>
                         <p class="new-price">Rp 550.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="buy.html" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                         </div>

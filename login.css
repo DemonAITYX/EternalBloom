@@ -225,7 +225,7 @@
 
 .back-btn i{
    font-size: 48px;  
-   color: #ffc60c;
+   color: #D4AF37;
 }
 
 
@@ -280,6 +280,17 @@
 
      .container.active .toggle-panel.toggle-right{
         bottom: 0;
+    }
+
+    .back-btn{
+      position: relative;
+      z-index: 999;
+    }
+
+    .back-btn i{
+      position: absolute;
+      z-index: 999;
+      color: #D4AF37;
     }
 }
 
