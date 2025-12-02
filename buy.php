@@ -1,3 +1,27 @@
+<?php
+include 'koneksi.php';
+
+if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+    $product_id = intval($_GET['id']);
+} else {
+    die("ID produk tidak valid atau tidak ditemukan di URL.");
+}
+
+$stmt = $conn->prepare("SELECT jenis, harga, gambar FROM hampers WHERE id = ?");
+$stmt->bind_param("i", $product_id);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows > 0) {
+     $product_data = $result->fetch_assoc();
+     $base_price = $product_data['harga'];
+} else {
+    die("Produk dengan ID $product_id tidak ditemukan.");
+}
+
+$stmt->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -217,12 +241,12 @@
         <a class="back-btn" href="index.html#hamper"><</a>
         <div class="product-container">
             <div class="product-image">
-                <div class="image-placeholder"><img src="blue.jpg" alt="bunga"></div>
+                <div class="image-placeholder"><img src="<?php echo htmlspecialchars($product_data['gambar']); ?>" alt="bunga"></div>
             </div>
             <div class="product-details">
-                <h1>Center Of Attention Bud Vase</h1>
+                <h1><?php echo htmlspecialchars($product_data['jenis']); ?></h1>
                 <h3>IDR:</h3>
-                <span id ="total-price-display">300.000;</span>
+                <span id ="total-price-display"><?php echo number_format($product_data['harga'],0,',','.'); ?></span>
                 
                 <p>Add a touch of texture to your Thanksgiving table with our Center Of Attentionbud vase collection! Perfect for a playful and unique Thanksgiving celebration.</p>
                 
@@ -230,7 +254,7 @@
                 
                 <p class="designer-rec">Designer Recommendation: can design your own greeting card.</p>
                 
-                <p class="delivery-info">***Rp. 300.000 minimum is required for delivery.***</p>
+                <p class="delivery-info">***Rp. 1.000.000 minimum is required for delivery.***</p>
 
                 <div class="form-section">
                     <label for="qty">Qty</label>
@@ -253,12 +277,13 @@
 </body>
 </html>
 <script>
-    const BASE_PRICE = 300000;
-
+    const BASE_PRICE = <?php echo json_encode($base_price); ?>;
+    console.log("Base price:", BASE_PRICE);
     function calculateTotal() {
+        
         const quantityInput = document.getElementById('qty');
         const priceDisplay = document.getElementById('total-price-display');
-
+       
         const quantity = Number(quantityInput.value) || 0;
 
         const total = quantity * BASE_PRICE;
