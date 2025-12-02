@@ -69,6 +69,7 @@ nav {
     display: flex;
     align-items: center;
     margin-inline: 540px;
+    
 }
 
 .pro-icon {
@@ -551,4 +552,39 @@ nav {
 
 .bou-cart:hover {
     transform: scale(1.06);
+}
+
+/*view page*/
+
+.v-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7%;
+    column-gap: 70px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.v-card {
+    padding-block: 20px;
+}
+
+.v-cont img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.v-info {
+    margin-top: 10px;
+}
+
+.v-info h4 {
+    color: white;
+}
+
+.v-info p {
+    color: #D4AF37;
 }
