@@ -18,13 +18,13 @@
             <div class="nav-container">
                 <img src="Logo3.png" alt="Logo" class="logo">
                     <ul class="nav-links">
-                        <li><a href="#menu" style="text-decoration: double gold;">Menu</a></li>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#hamper">Hampers</a></li>
                         <li><a href="#bouquet">Bouquets</a></li>
                     </ul>
                     <a href="login.html" class="profil">
-                        <img src="profile.png" class="pro-icon">
+                        <h3>Login</h3>
+                        <img src="profile.png">
                     </a>
             </div>
         </nav>
@@ -35,16 +35,15 @@
                     <source src="flower.mp4" type="video/mp4">
                 </video>
                 <div class="hero-content">
-                    <div class="hero-title">
+                    <div class="hero-info">
                         <h1> Bunga Berbicara saat<br>Kata Tak Mampu</h1>
-                    </div>
-                    <div class="hero-desc">
                         <p>"Kami menghadirkan berbagai pilihan bunga segar <br>yang penuh makna untuk setiap momen spesial Anda. <br>Dari hadiah romantis, ucapan selamat, hingga dekorasi <br>elegan, setiap bunga kami dipilih dengan penuh cinta <br>untuk menyampaikan pesan hati Anda. Mari temukan<br> keindahan dan kebahagiaan dalam setiap kelopak bunga."</p></p>
                     </div>
                 </div>
         </section>
 
         <section>
+            <div id="notif">Ditambahkan ke keranjang!</div>
             <div class="e-container">
                 <div class="e-card">
                     <div class="e-imgs">
@@ -54,7 +53,7 @@
                         <img src="val (4).jpg">
                     </div>
                     <h1 class="pro-name">Valentine</h1>
-                    <a href="view2.html" target="_blank" class="view-btn">View all</a>
+                    <a href="valentine.html" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -64,7 +63,7 @@
                         <img src="christmas (1).jpg">
                     </div>
                     <h1 class="pro-name">Christmas</h1>
-                    <a href="view1.html" target="_blank" class="view-btn">View all</a>
+                    <a href="christmas.html" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -74,7 +73,7 @@
                         <img src="ram1 (1).jpg">
                     </div>
                     <h1 class="pro-name">Ramadhan</h1>
-                    <a href="#view" target="_blank" class="view-btn">View all</a>
+                    <a href="ramadhan.html" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -84,7 +83,7 @@
                         <img src="cny (4).jpg">
                     </div>
                     <h1 class="pro-name" style="font-size: 2.2rem;">Chinese New Year</h1>
-                    <a href="#view" target="_blank" class="view-btn">View all</a>
+                    <a href="chinesenewyear.html" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -94,7 +93,7 @@
                         <img src="teacher (4).avif">
                     </div>
                     <h1 class="pro-name" style="font-size: 2rem;">Happy Teacher's Day</h1>
-                    <a href="view.html" target="_blank" class="view-btn">View all</a>
+                    <a href="teachersday.html" target="_blank" class="view-btn">View all</a>
                 </div>
                 
             </div>
@@ -106,7 +105,7 @@
                 <button class="arrow left" id="prevBtn">❮</button>
                 <div class="container-c" id="slider">
                         <div class="card">
-                            <a href="buy.php?id=1" target="_blank" class="cart-btn">
+                            <a href="buy.html" target="_blank" class="cart-btn">
                                 <img src="cart (2).png" class="cart">  
                             </a>
                             <span class="sale-tag">Sale</span>
@@ -257,7 +256,7 @@
                 <div class="bou-card">
                     <img src="blue.jpg">
                     <div class="intro-b">
-                        <h3>Premium Flare Floral</h3>
+                        <h3 style="font-size: 27px;">Premium Flare Floral</h3>
                         <p class="new-price">Rp 280.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="#beli" target="_blank">Buy</a>
@@ -268,7 +267,7 @@
                 <div class="bou-card">
                     <img src="red pink.jpg">
                     <div class="intro-b">
-                        <h3>Cherry Blossom</h3>
+                        <h3 style>Cherry Blossom</h3>
                         <p class="new-price">Rp 370.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="#beli" target="_blank">Buy</a>
@@ -346,5 +345,10 @@
         prev.addEventListener("click", () => {
             slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
         });
+
+        document.querySelector("cart-btn").addEventListener("click", function() {
+            alert("Ditambahkan ke keranjang!");
+        });
+
     </script>
 </html>
