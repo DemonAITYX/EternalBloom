@@ -42,15 +42,11 @@ $subtotal = $base_price * $qty;
 
         <div class="left">
            <div class="header-cart">
-            <a class="btn-info" href="buy.html">❮</a>
+            <a class="btn-info" href="buy.php">❮</a>
             <h2 class="shop"><?php echo htmlspecialchars($product['jenis']); ?></h2>
             </div>
-
-
             <div class="cart-item">
                 <img src="<?php echo htmlspecialchars($product['gambar']); ?>" alt="Bouquet">
-
-            
             </div>
         </div>
 
@@ -156,9 +152,7 @@ $subtotal = $base_price * $qty;
 
         
             <button type="button" class="checkout" id="checkoutBtn">Checkout</button>
-
-
-            <a href="#" class="continue">CONTINUE SHOPPING</a>
+            <a href="index.php" class="continue">CONTINUE SHOPPING</a>
 
         </div>
     </div>

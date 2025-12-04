@@ -1,7 +1,7 @@
 <?php
 require 'koneksi.php';
 
-$stmt = $conn->prepare("SELECT id, jenis, harga, gambar FROM hampers ORDER BY id ASC");
+$stmt = $conn->prepare("SELECT id, jenis, harga, gambar FROM christmas ORDER BY id ASC");
 $stmt->execute();
 $result = $stmt->get_result();
 ?>
@@ -147,7 +147,7 @@ $result = $stmt->get_result();
 
                 <p><i>Designer Recommendation: You can design your own greeting card.</i></p>
 
-                <p><b>***Rp. 1.000.000 minimum is required for delivery.***</b></p>
+                <p><b>***Rp. 100.000 minimum is required for delivery.***</b></p>
 
                 <div class="form-section">
                     <label>Qty</label>
@@ -156,7 +156,7 @@ $result = $stmt->get_result();
                         <input type="number" value="1" min="1" max="20">
                         <button class="plus">+</button>
                     </div>
-                    <a class="add-to-cart" href="checkout.php?id=<?php echo $row['id']; ?>&qty=" onclick="this.href += this.parentElement.querySelector('input[type=number]').value;">ADD TO CART</a>
+                    <a class="add-to-cart" href="checkout_chr.php?id=<?php echo $row['id']; ?>&qty=" onclick="this.href += this.parentElement.querySelector('input[type=number]').value;">ADD TO CART</a>
                 </div>
             </div>
 

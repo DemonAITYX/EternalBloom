@@ -58,7 +58,7 @@ $result = $stmt->get_result();
                 <div class="buttons">
                  
                     <a class="info-btn" href="checkout_chr.php?id=<?php echo $row['id']; ?>">Buy</a>
-                    <a class="info-btn" href="checkout.php?id=<?php echo $row['id']; ?>">Add to Cart</a>
+                    <a class="info-btn" href="buy_chr.php?id=<?php echo $row['id']; ?>">Add to Cart</a>
                 </div>
 
             </div>

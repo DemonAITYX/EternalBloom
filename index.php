@@ -171,7 +171,7 @@ session_start();
                         <p class="new-price">Rp 355.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=1" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@ session_start();
                         <p class="new-price">Rp 220.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=2" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@ session_start();
                         <p class="new-price">Rp 250.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=3" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@ session_start();
                         <p class="new-price">Rp 450.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=4" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@ session_start();
                         <p class="new-price">Rp 375.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=5" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@ session_start();
                         <p class="new-price">Rp 300.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=6" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@ session_start();
                         <p class="new-price">Rp 325.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=7" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@ session_start();
                         <p class="new-price">Rp 280.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=8" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -259,7 +259,7 @@ session_start();
                         <p class="new-price">Rp 370.000.00</p>
                         <div class="bou-button">
                         <a class="bou-buy" href="checkout_bou.php?id=9" target="_blank">Buy</a>
-                        <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
+                        <a class="bou-cart" href="buy_bou.php?id=<?php echo $row['id']; ?>" target="_blank">Add to Cart</a>
                         </div>
                         </div>
                     </div>
