@@ -48,6 +48,27 @@ nav {
     list-style: none;
 }
 
+.nav-links.show {
+    display: block !important;
+    flex-direction: column;
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 50%;
+}
+
+
+.hamburger {
+    font-size: 35px;
+    color: #D4AF37;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+
 .nav-links a {
     display: flex;
     color: white;
@@ -223,12 +244,10 @@ nav {
 }
 
 #hamper .slider-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
 }
 
 #hamper .container-c {
@@ -341,8 +360,8 @@ nav {
 
 #hamper .cart-btn {
     position: absolute;
-    bottom: 0;
     right: 20rem;
+    top: 26.8rem;
     background-color: #0b1b38;
     padding: 3px 14px;
     border: 1px solid #D4AF37;
@@ -614,7 +633,8 @@ nav {
 /* ============================================
    RESPONSIVE NAVBAR
 ============================================ */
-@media (max-width: 768px) {
+
+@media (max-width: 900px) {
     .nav-container {
         flex-direction: row;
         text-align: center;
@@ -627,6 +647,10 @@ nav {
         margin-top: 10px;
     }
 
+    .profil h3 {
+        visibility: hidden;
+    }
+
     .nav-links a {
         font-size: 22px;
         padding: 5px 0;
@@ -636,13 +660,82 @@ nav {
         display: none;
     }
 
+
     .profil img {
-        height: 45px;
+        position: absolute;
+        right: 5vw;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    
+    .nav-links a {
+        font-size: 22px;
+        padding: 5px 0;
+    }
+    
+    .profil p {
+        display: none;
+    }
+    
+    .profil h3 {
+        visibility: hidden;
+    }
+    
+    .profil img {
+        position: absolute;
+        right: 5vw;
     }
 }
 
+@media (max-width: 611px) {
+    .nav-container {
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 5vw;
+        z-index: 20;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .profil p {
+        display: none;
+    }
+
+    .profil h3 {
+        visibility: hidden;
+    }
+
+    .profil img {
+        position: absolute;
+        right: 13vw;
+    }
+
+}
 /* ============================================
-   RESPONSIVE HERO
+RESPONSIVE HERO
 ============================================ */
 @media (max-width: 900px) {
     .hero-info {
@@ -672,25 +765,51 @@ nav {
    RESPONSIVE EVENT CARD
 ============================================ */
 @media (max-width: 1100px) {
-    .e-container {
-        justify-content: center;
-        padding: 30px 10px;
+
+    .e-card {
+        height: 460px;
+        width: 320px;
     }
+
 }
 
 @media (max-width: 768px) {
-    .e-card {
-        width: 90%;
-        height: auto;
+     .e-card {
+        height: 380px;
+        width: 210px;
     }
 
     .e-imgs img {
-        height: 120px;
+        height: 110px;
+    }
+
+    .view-btn {
+        margin-left: 24%;
     }
 
     .pro-name {
-        font-size: 32px;
+        font-size: 25px;
     }
+}
+
+@media (max-width: 600px) {
+    .e-card {
+        height: 400px;
+        width: 214px;
+    }
+
+    .e-imgs img {
+        height: 110px;
+    }
+
+    .view-btn {
+        margin-left: 24%;
+    }
+
+    .pro-name {
+        font-size: 25px;
+    }
+
 }
 
 /* ============================================
@@ -701,15 +820,45 @@ nav {
         margin-inline: 20px;
     }
 
-    #hamper .card {
-        width: 260px;
-        height: auto;
+    #hamper .intro h1 {
+        font-size: 20px;
     }
 
-    #hamper img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
+    #hamper .card {
+        width: 240px;
+        height: 340px;
+    }
+
+    #hamper .cart-btn {
+        opacity: 1;
+        right: 11rem;
+        top: 18rem;
+    }
+
+    #hamper .card:hover .buy-btn {
+        bottom: 11px !important;
+        right: 10rem !important;
+        padding: 4px 14px !important;
+        /* Jadi tidak membesar lagi */
+    }
+
+    #hamper .buy-btn {
+        bottom: 10px;
+        right: 10rem;
+        padding: 2px 10px;
+    }
+
+    #hamper .intro {
+        height: 70px;
+    }
+
+    #hamper .sale-tag {
+        visibility: hidden;
+    }
+
+    #hamper .intro p {
+        opacity: 1;
+        font-size: 15px;
     }
 
     .arrow {
@@ -717,6 +866,7 @@ nav {
         width: 38px;
         height: 38px;
         margin-inline: 5px;
+        visibility: hidden;
     }
 }
 
@@ -726,7 +876,6 @@ nav {
 @media (max-width: 1100px) {
     .bou-container {
         margin-inline: 40px;
-        height: auto;
         padding-bottom: 40px;
     }
 }
@@ -777,6 +926,7 @@ nav {
 
     .hamper-title,
     .bou-title {
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
 }
+
