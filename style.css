@@ -444,6 +444,7 @@ nav {
 .bou-title {
     color: #D4AF37;
     font-size: 5rem;
+    padding-bottom: 40px;
     font-family: 'Cinzel';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 3px;
@@ -455,10 +456,9 @@ nav {
     height: 35rem;
     background: #0b1b38;
     overflow-y: auto;
-    padding-block: 15px;
+    padding-block: 3rem;
     border-radius: 10px;
     margin-inline: 115px;
-    margin-bottom: 10rem;
     justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
@@ -481,7 +481,6 @@ nav {
     flex: 0 0 auto;
     scale: 0.95;
     width: 20rem;
-    padding-bottom: 20px;
     color: #D4AF37;
     border-radius: 10px;
     overflow: hidden;
