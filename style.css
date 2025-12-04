@@ -468,7 +468,6 @@ nav {
     box-shadow: 1px 1px 10px #867026;
     transition: 0.3s;
     cursor: pointer;
-    
 }
 
 .bou-container:hover {
@@ -610,4 +609,174 @@ nav {
 
 .v-info p {
     color: #D4AF37;
+}
+
+/* ============================================
+   RESPONSIVE NAVBAR
+============================================ */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 22px;
+        padding: 5px 0;
+    }
+
+    .profil p {
+        display: none;
+    }
+
+    .profil img {
+        height: 45px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE HERO
+============================================ */
+@media (max-width: 900px) {
+    .hero-info {
+        top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero-info h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .hero-info p {
+        font-size: 18px;
+    }
+
+    .pro-icon {
+        padding-inline: 0;
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   RESPONSIVE EVENT CARD
+============================================ */
+@media (max-width: 1100px) {
+    .e-container {
+        justify-content: center;
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .e-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .e-imgs img {
+        height: 120px;
+    }
+
+    .pro-name {
+        font-size: 32px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE HAMPER SLIDER
+============================================ */
+@media (max-width: 900px) {
+    #hamper .container-c {
+        margin-inline: 20px;
+    }
+
+    #hamper .card {
+        width: 260px;
+        height: auto;
+    }
+
+    #hamper img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .arrow {
+        font-size: 18px;
+        width: 38px;
+        height: 38px;
+        margin-inline: 5px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE BOUQUET SECTION
+============================================ */
+@media (max-width: 1100px) {
+    .bou-container {
+        margin-inline: 40px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .bou-card {
+        width: 90%;
+    }
+
+    .bou-card img {
+        height: 250px;
+        padding: 0;
+    }
+}
+
+/* ============================================
+   RESPONSIVE VIEW PAGE
+============================================ */
+@media (max-width: 800px) {
+    .v-cont {
+        margin-block: 20%;
+    }
+
+    .v-cont img {
+        width: 90%;
+        height: auto;
+    }
+
+    .v-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .v-info .buttons {
+        padding-left: 0;
+        align-items: center;
+    }
+}
+
+/* ============================================
+   GENERAL SMALL SCREEN FIX
+============================================ */
+@media (max-width: 600px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .hamper-title,
+    .bou-title {
+        font-size: 2.5rem;
+    }
 }
