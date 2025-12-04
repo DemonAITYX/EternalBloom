@@ -239,6 +239,7 @@ $stmt->close();
     </header>
     <div class="container">
         <a class="back-btn" href="index.html#hamper"><</a>
+        <div class="card">
         <div class="product-container">
             <div class="product-image">
                 <div class="image-placeholder"><img src="<?php echo htmlspecialchars($product_data['gambar']); ?>" alt="bunga"></div>
@@ -273,6 +274,79 @@ $stmt->close();
                 </div>
             </div>
         </div>
+    </div>
+        <div class="card">
+        <div class="product-container">
+            <div class="product-image">
+                <div class="image-placeholder"><img src="<?php echo htmlspecialchars($product_data['gambar']); ?>" alt="bunga"></div>
+            </div>
+            <div class="product-details">
+                <h1><?php echo htmlspecialchars($product_data['jenis']); ?></h1>
+                <h3>IDR:</h3>
+                <span id ="total-price-display"><?php echo number_format($product_data['harga'],0,',','.'); ?></span>
+                
+                <p>Add a touch of texture to your Thanksgiving table with our Center Of Attentionbud vase collection! Perfect for a playful and unique Thanksgiving celebration.</p>
+                
+                <p>Priced individually.</p>
+                
+                <p class="designer-rec">Designer Recommendation: can design your own greeting card.</p>
+                
+                <p class="delivery-info">***Rp. 1.000.000 minimum is required for delivery.***</p>
+
+                <div class="form-section">
+                    <label for="qty">Qty</label>
+                    <div class="qty-selector">
+                        <button class="minus" onclick="updateQuantity(-1)">-</button>
+                        <input type="number" id="qty" value="1" min="1" max="20">
+                        <button class="plus" onclick="updateQuantity(+1)">+</button>
+                    </div>
+                    <a class="add-to-cart" href="checkout.html">ADD TO CART</a>
+                </div>
+
+                <div class="pickup-info">
+                    <span class="checkmark">✔</span>
+                    Pickup available at **Eternal Bloom Vanue**
+                    <a href="index.html">View store information.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="card">
+        <div class="product-container">
+            <div class="product-image">
+                <div class="image-placeholder"><img src="<?php echo htmlspecialchars($product_data['gambar']); ?>" alt="bunga"></div>
+            </div>
+            <div class="product-details">
+                <h1><?php echo htmlspecialchars($product_data['jenis']); ?></h1>
+                <h3>IDR:</h3>
+                <span id ="total-price-display"><?php echo number_format($product_data['harga'],0,',','.'); ?></span>
+                
+                <p>Add a touch of texture to your Thanksgiving table with our Center Of Attentionbud vase collection! Perfect for a playful and unique Thanksgiving celebration.</p>
+                
+                <p>Priced individually.</p>
+                
+                <p class="designer-rec">Designer Recommendation: can design your own greeting card.</p>
+                
+                <p class="delivery-info">***Rp. 1.000.000 minimum is required for delivery.***</p>
+
+                <div class="form-section">
+                    <label for="qty">Qty</label>
+                    <div class="qty-selector">
+                        <button class="minus" onclick="updateQuantity(-1)">-</button>
+                        <input type="number" id="qty" value="1" min="1" max="20">
+                        <button class="plus" onclick="updateQuantity(+1)">+</button>
+                    </div>
+                    <a class="add-to-cart" href="checkout.html">ADD TO CART</a>
+                </div>
+
+                <div class="pickup-info">
+                    <span class="checkmark">✔</span>
+                    Pickup available at **Eternal Bloom Vanue**
+                    <a href="index.html">View store information.</a>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
