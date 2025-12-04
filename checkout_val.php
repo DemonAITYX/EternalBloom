@@ -1,3 +1,29 @@
+<?php
+require 'koneksi.php';
+
+if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+    die("ID produk tidak valid.");
+}
+$product_id = intval($_GET['id']);
+$qty = isset($_GET['qty']) && is_numeric($_GET['qty']) && $_GET['qty'] > 0 
+        ? intval($_GET['qty']) 
+        : 1;
+
+$stmt = $conn->prepare("SELECT jenis, harga, gambar FROM valentine WHERE id = ?");
+$stmt->bind_param("i", $product_id);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows === 0) {
+    die("Produk tidak ditemukan.");
+}
+$product = $result->fetch_assoc();
+$stmt->close();
+
+$base_price = $product['harga'];
+$subtotal = $base_price * $qty;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +43,12 @@
         <div class="left">
            <div class="header-cart">
             <a class="btn-info" href="buy.html">❮</a>
-            <h2 class="shop">Shopping Cart</h2>
+            <h2 class="shop"><?php echo htmlspecialchars($product['jenis']); ?></h2>
             </div>
 
 
             <div class="cart-item">
-                <img src="WhatsApp Image 2025-11-26 at 08.08.19.jpeg" alt="Bouquet">
+                <img src="<?php echo htmlspecialchars($product['gambar']); ?>" alt="Bouquet">
 
             
             </div>
@@ -31,7 +57,7 @@
     
         <div class="right">
 
-            <h2>Subtotal: Rp. 1.250.000</h2>
+            <h2>Subtotal: Rp. <?php echo number_format($subtotal, 0, ',', '.'); ?></h2>
             <p class="note-info">Orders will be processed in Rp.</p>
 
             <p class="delivery-label">Select local delivery OR in-store pickup:</p>
@@ -186,8 +212,8 @@ validateForm = function(){
 <script>
 document.addEventListener('DOMContentLoaded', function() {
    
-    let price = 1250000;
-    let qty = 1;
+    let price = <?php echo $base_price ?>;
+    let qty   = <?php echo $qty ?>;
 
     const qtyContainer = document.querySelector('.quantity');
     const qtyText = qtyContainer ? qtyContainer.querySelector('span') : null;

@@ -56,7 +56,7 @@ session_start();
                         <img src="val (4).jpg">
                     </div>
                     <h1 class="pro-name">Valentine</h1>
-                    <a href="valentine.html" target="_blank" class="view-btn">View all</a>
+                    <a href="valentine.php" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -66,7 +66,7 @@ session_start();
                         <img src="christmas (1).jpg">
                     </div>
                     <h1 class="pro-name">Christmas</h1>
-                    <a href="christmas.html" target="_blank" class="view-btn">View all</a>
+                    <a href="christmas.php" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -76,7 +76,7 @@ session_start();
                         <img src="ram1 (1).jpg">
                     </div>
                     <h1 class="pro-name">Ramadhan</h1>
-                    <a href="ramadhan.html" target="_blank" class="view-btn">View all</a>
+                    <a href="ramadhan.php" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -86,7 +86,7 @@ session_start();
                         <img src="cny (4).jpg">
                     </div>
                     <h1 class="pro-name" style="font-size: 2.2rem;">Chinese New Year</h1>
-                    <a href="chinesenewyear.html" target="_blank" class="view-btn">View all</a>
+                    <a href="chinesenewyear.php" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -96,7 +96,7 @@ session_start();
                         <img src="teacher (4).avif">
                     </div>
                     <h1 class="pro-name" style="font-size: 2rem;">Happy Teacher's Day</h1>
-                    <a href="teachersday.html" target="_blank" class="view-btn">View all</a>
+                    <a href="teachersday.php" target="_blank" class="view-btn">View all</a>
                 </div>
                 
             </div>
@@ -116,7 +116,7 @@ session_start();
                         <div class="intro">
                             <h1>Makeup Set</h1>
                             <p class="price">Rp. 1.250.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="checkout.php?id=1" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
 
@@ -129,7 +129,7 @@ session_start();
                         <div class="intro">
                             <h1>Chocolate Box</h1>
                             <p class="price">Rp. 1.000.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="checkout.php?id=2" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
 
@@ -142,7 +142,7 @@ session_start();
                         <div class="intro">
                             <h1 style="font-size: 27px;">Wedding Souvenir</h1>
                             <p class="price">Rp. 1.500.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="checkout.php?id=3" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     <div class="card">
@@ -154,7 +154,7 @@ session_start();
                         <div class="intro">
                             <h1 style="font-size: 27px;">Skincare Set</h1>
                             <p class="price">Rp. 1.550.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="checkout.php?id=4" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     <div class="card">
@@ -166,7 +166,7 @@ session_start();
                         <div class="intro">
                             <h1 style="font-size: 27px;">Fruitty Box</h1>
                             <p class="price">Rp. 1.200.000</p>
-                            <a href="#beli" target="_blank" class="buy-btn">Buy</a>
+                            <a href="checkout.php?id=5" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     
@@ -185,7 +185,7 @@ session_start();
                         <h3>Azure Hydrangea</h3>
                         <p class="new-price">Rp 355.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=1" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -196,7 +196,7 @@ session_start();
                         <h3>Sage Bloom</h3>
                         <p class="new-price">Rp 220.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=2" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ session_start();
                         <h3>Golden Marigold</h3>
                         <p class="new-price">Rp 250.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=3" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -218,7 +218,7 @@ session_start();
                         <h3>Scarlet Poeny</h3>
                         <p class="new-price">Rp 450.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=4" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -229,7 +229,7 @@ session_start();
                         <h3>Amber Daisy</h3>
                         <p class="new-price">Rp 375.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=5" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -240,7 +240,7 @@ session_start();
                         <h3>Blushsy Poeny</h3>
                         <p class="new-price">Rp 300.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=6" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -251,7 +251,7 @@ session_start();
                         <h3>Premium Sun Flower</h3>
                         <p class="new-price">Rp 325.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=7" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -262,7 +262,7 @@ session_start();
                         <h3 style="font-size: 27px;">Premium Flare Floral</h3>
                         <p class="new-price">Rp 280.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=8" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                     </div>
@@ -273,7 +273,7 @@ session_start();
                         <h3 style>Cherry Blossom</h3>
                         <p class="new-price">Rp 370.000.00</p>
                         <div class="bou-button">
-                        <a class="bou-buy" href="#beli" target="_blank">Buy</a>
+                        <a class="bou-buy" href="checkout_bou.php?id=9" target="_blank">Buy</a>
                         <a class="bou-cart" href="#keranjang" target="_blank">Add to Cart</a>
                         </div>
                         </div>
