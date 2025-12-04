@@ -636,8 +636,14 @@ nav {
         display: none;
     }
 
+    .profil h3 {
+        visibility: hidden;
+    }
+
     .profil img {
-        height: 45px;
+        position: absolute;
+        right: 5vw;
+        background: red;
     }
 }
 
