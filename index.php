@@ -17,22 +17,7 @@ session_start();
         <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-        <nav>
-            <div class="nav-container">
-                <img src="Logo3.png" alt="Logo" class="logo">
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#hamper">Hampers</a></li>
-                        <li><a href="#bouquet">Bouquets</a></li>
-                    </ul>
-                    <a href="login.php" class="profil">
-                        <h3>Login</h3>
-                        <img src="profile.png">
-                    </a>
-            </div>
-        </nav>
-    </header>
+        <?php include 'navbar.php'; ?>
         <section id="home" class="hero">
             <div class="hero-content">
                 <video autoplay muted loop class="video-bg">
@@ -56,7 +41,9 @@ session_start();
                         <img src="val (4).jpg">
                     </div>
                     <h1 class="pro-name">Valentine</h1>
+                    <div class="view">
                     <a href="valentine.php" target="_blank" class="view-btn">View all</a>
+                    </div>
                 </div>
                 <div class="e-card">
                     <div class="e-imgs">
@@ -85,7 +72,7 @@ session_start();
                         <img src="cny (3).jpg">
                         <img src="cny (4).jpg">
                     </div>
-                    <h1 class="pro-name" style="font-size: 2.2rem;">Chinese New Year</h1>
+                    <h1 class="pro-name">Chinese New Year</h1>
                     <a href="chinesenewyear.php" target="_blank" class="view-btn">View all</a>
                 </div>
                 <div class="e-card">
@@ -95,10 +82,9 @@ session_start();
                         <img src="teacher (3).jpg">
                         <img src="teacher (4).avif">
                     </div>
-                    <h1 class="pro-name" style="font-size: 2rem;">Happy Teacher's Day</h1>
+                    <h1 class="pro-name">Teacher's Day</h1>
                     <a href="teachersday.php" target="_blank" class="view-btn">View all</a>
-                </div>
-                
+                </div>           
             </div>
         </section>
 
@@ -108,7 +94,7 @@ session_start();
                 <button class="arrow left" id="prevBtn">❮</button>
                 <div class="container-c" id="slider">
                         <div class="card">
-                            <a href="buy.html" target="_blank" class="cart-btn">
+                            <a href="buy.php?id=1" target="_blank" class="cart-btn">
                                 <img src="cart (2).png" class="cart">  
                             </a>
                             <span class="sale-tag">Sale</span>
@@ -140,36 +126,35 @@ session_start();
                             <span class="sale-tag">Sale</span>
                             <img src="weddings.jpg" alt="Hampers 1">
                         <div class="intro">
-                            <h1 style="font-size: 27px;">Wedding Souvenir</h1>
+                            <h1>Wedding Souvenir</h1>
                             <p class="price">Rp. 1.500.000</p>
                             <a href="checkout.php?id=3" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     <div class="card">
-                        <a href="#keranjang" target="_blank" class="cart-btn">
+                        <a href="buy.php?id=4" target="_blank" class="cart-btn">
                                 <img src="cart (2).png" class="cart">
                             </a>
                             <span class="sale-tag">Sale</span>
                             <img src="skincare.jpg" alt="Hampers 1">
                         <div class="intro">
-                            <h1 style="font-size: 27px;">Skincare Set</h1>
+                            <h1>Skincare Set</h1>
                             <p class="price">Rp. 1.550.000</p>
                             <a href="checkout.php?id=4" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
                     <div class="card">
-                        <a href="#keranjang" target="_blank" class="cart-btn">
+                        <a href="buy.php?id=5" target="_blank" class="cart-btn">
                                 <img src="cart (2).png" class="cart">
                             </a>
                             <span class="sale-tag">Sale</span>
                             <img src="fruits.jpg" alt="Hampers 1">
                         <div class="intro">
-                            <h1 style="font-size: 27px;">Fruitty Box</h1>
+                            <h1>Fruitty Box</h1>
                             <p class="price">Rp. 1.200.000</p>
                             <a href="checkout.php?id=5" target="_blank" class="buy-btn">Buy</a>
                         </div>
-                    </div>
-                    
+                    </div>          
                     <button class="arrow right" id="nextBtn">❯</button>
                 </div>
             </div>
@@ -337,6 +322,10 @@ session_start();
     </footer>
     </body>
     <script>
+        document.querySelector(".hamburger").onclick = () => {
+    document.querySelector(".nav-links").classList.toggle("show");
+};
+
         const slider = document.getElementById("slider");
         const next = document.getElementById("nextBtn");
         const prev = document.getElementById("prevBtn");
