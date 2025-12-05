@@ -46,11 +46,8 @@ $subtotal = $base_price * $qty;
             <h2 class="shop"><?php echo htmlspecialchars($product['jenis']); ?></h2>
             </div>
 
-
             <div class="cart-item">
                 <img src="<?php echo htmlspecialchars($product['gambar']); ?>" alt="Bouquet">
-
-            
             </div>
         </div>
 
