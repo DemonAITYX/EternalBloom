@@ -31,7 +31,7 @@ $result = $stmt->get_result();
         <img src="Logo3.png" alt="Logo" class="logo">
         <ul class="nav-links">
             <li><a href="#menu" style="text-decoration: double gold;">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#hamper">Hampers</a></li>
             <li><a href="#bouquet">Bouquets</a></li>
         </ul>
