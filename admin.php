@@ -91,6 +91,8 @@ a.delete-btn:hover {
     background-color: #ff3300;
     color: #fff;
     padding: 8px 10px;
+    gap: 5px;
+    margin: 5px;
     text-decoration: none;
     border-radius: 4px;
     margin-bottom: 8px;
@@ -131,6 +133,7 @@ a.delete-btn:hover {
 <h2>Admin Panel</h2>
 
 <a href="logout.php" class="logout">Logout</a>
+<a href="admin_barang.php" class="logout">Data Barang</a>
 
 <table>
     <tr>
