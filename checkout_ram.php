@@ -42,7 +42,7 @@ $subtotal = $base_price * $qty;
 
         <div class="left">
            <div class="header-cart">
-            <a class="btn-info" href="buy_ram.html">❮</a>
+            <a class="btn-info" href="index.php">❮</a>
             <h2 class="shop"><?php echo htmlspecialchars($product['jenis']); ?></h2>
             </div>
 
@@ -80,7 +80,7 @@ $subtotal = $base_price * $qty;
             <label class="title" style="margin-top: 25px;">NAMA PENERIMA</label>
             <input type="text" id="penerima" class="form-control">
 
-        <label class="title" style="margin-top: 25px;">NAMA PENGIRIM</label>
+        <label class="title" style="margin-top: 25px;">SENDER'S NAME</label>
             <input type="text" id="pengirim" class="form-control">
 
             <br>

@@ -73,10 +73,10 @@ $subtotal = $base_price * $qty;
             
             <h4 style="margin-top: 25px;">Recipient Information</h4>
 
-            <label class="title" style="margin-top: 25px;">NAMA PENERIMA</label>
+            <label class="title" style="margin-top: 25px;">RECIPIENT'S NAME</label>
             <input type="text" id="penerima" class="form-control">
 
-        <label class="title" style="margin-top: 25px;">NAMA PENGIRIM</label>
+        <label class="title" style="margin-top: 25px;">SENDER'S NAME</label>
             <input type="text" id="pengirim" class="form-control">
 
             <br>
@@ -113,9 +113,9 @@ $subtotal = $base_price * $qty;
             
             <div id="delivery-section">
 
-                <label class="title">DELIVERY CITY</label>
+                <label class="title">DELIVERY DISCRICT</label>
                 <select class="form-select city-select">
-                    <option>Choose Delivery City</option>
+                    <option>Choose Delivery DISCRICT</option>
                     <option>Medan Amplas</option>
                     <option>Medan Area</option>
                     <option>Medan Barat</option>

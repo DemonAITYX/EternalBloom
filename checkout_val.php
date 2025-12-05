@@ -42,7 +42,7 @@ $subtotal = $base_price * $qty;
 
         <div class="left">
            <div class="header-cart">
-            <a class="btn-info" href="buy_val.html">❮</a>
+            <a class="btn-info" href="index.php">❮</a>
             <h2 class="shop"><?php echo htmlspecialchars($product['jenis']); ?></h2>
             </div>
 

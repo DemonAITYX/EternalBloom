@@ -102,7 +102,7 @@ session_start();
                         <div class="intro">
                             <h1>Makeup Set</h1>
                             <p class="price">Rp. 1.250.000</p>
-                            <a href="checkout.php?id=1" target="_blank" class="buy-btn">Buy</a>
+                            <a href="buy.php?id=1" target="_blank" class="buy-btn">Buy</a>
                         </div>
                     </div>
 

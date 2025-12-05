@@ -53,7 +53,7 @@
             </div>
             <hr>
             <div class="d-flex justify-content-between">
-                <p>2025 © Kelompok 7. All Rights Reserved.</p>
+                <p>2025 © Kelompok 8. All Rights Reserved.</p>
                 <div>
                   <a href="#" class="text-decoration-none text-light me-4">Terms of use</a>
                   <a href="#" class="text-decoration-none text-light">Privacy Policy</a>
