@@ -2,13 +2,11 @@
 session_start();
 require 'koneksi.php';
 
-// Cek admin
 if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== true){
     header("Location: index.php");
     exit;
 }
 
-// Hapus barang
 if (isset($_GET['delete'])) {
     $id = intval($_GET['delete']);
     $stmt = $conn->prepare("DELETE FROM hampers WHERE id = ?");
@@ -34,7 +32,9 @@ $barang = $conn->query("SELECT * FROM hampers ORDER BY id DESC");
 
         h2 
         { 
-            color: #070c72; 
+            color: #D4AF37; 
+            margin-left: 38rem;
+            font-size: 30px;
         }
 
         table 
@@ -84,14 +84,6 @@ $barang = $conn->query("SELECT * FROM hampers ORDER BY id DESC");
             text-decoration: none;
         }
 
-        .tambah 
-        { 
-            background: #0ea5e9; 
-            display: inline-block; 
-            margin-bottom: 15px; 
-            text-decoration: none;
-        }
-
         .logout 
         { 
             float: right; 
@@ -100,6 +92,7 @@ $barang = $conn->query("SELECT * FROM hampers ORDER BY id DESC");
             border-radius: 5px;
             color: white; 
             text-decoration: none;
+            margin-bottom: 8px;
             }
     </style>
 </head>
@@ -107,9 +100,6 @@ $barang = $conn->query("SELECT * FROM hampers ORDER BY id DESC");
 
 <h2>Kelola Data Barang</h2>
 <a href="logout.php" class="logout">Logout</a>
-
-<a href="tambah_barang.php" class="btn tambah">+ Tambah Barang</a>
-
 <table>
     <tr>
         <th>ID</th>
@@ -126,7 +116,7 @@ $barang = $conn->query("SELECT * FROM hampers ORDER BY id DESC");
         <td><?= htmlspecialchars($b['jenis']) ?></td>
         <td>Rp <?= number_format($b['harga'], 0, ',', '.') ?></td>
         <td><?= $b['stok'] ?></td>
-        <td><img src="<?= htmlspecialchars($b['gambar']) ?>" width="60"></td>
+        <td><img src="<?= htmlspecialchars($b['gambar']) ?>" width="80"></td>
         <td>
             <a href="edit_barang.php?id=<?= $b['id'] ?>" class="btn edit">Edit</a>
             <a href="admin_barang.php?delete=<?= $b['id'] ?>" class="btn hapus" onclick="return confirm('Yakin hapus barang ini?')">Hapus</a>
