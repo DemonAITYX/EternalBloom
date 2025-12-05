@@ -2,15 +2,11 @@
 require 'conn.php';
 session_start();
 
-/*
-   REGISTER 
-*/
 if (isset($_POST['submit'])) {
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    // Role default user
     $role = "user";
 
     $stmt = $conn->prepare("INSERT INTO users (nama, email, pw, role) VALUES (?, ?, ?, ?)");
@@ -23,10 +19,6 @@ if (isset($_POST['submit'])) {
     }
 }
 
-
-/* 
-   LOGIN 
- */
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $pw = $_POST['password'];
@@ -39,14 +31,10 @@ if (isset($_POST['login'])) {
     if ($result->num_rows === 1) {
 
         $user = $result->fetch_assoc();
-        $stored = $user['pw']; // bisa INT, MD5, atau HASH
+        $stored = $user['pw']; 
 
-        /*
-            1. Password HASH → langsung verify
-        */
         if (strlen($stored) > 30 && password_verify($pw, $stored)) {
 
-            // Rehash jika perlu
             if (password_needs_rehash($stored, PASSWORD_DEFAULT)) {
                 $newHash = password_hash($pw, PASSWORD_DEFAULT);
                 $u = $conn->prepare("UPDATE users SET pw = ? WHERE id = ?");
@@ -55,25 +43,20 @@ if (isset($_POST['login'])) {
             }
 
         } 
-        /*
-            2. Password INT → cocokkan langsung
-            contoh: db = 1234, user masukin 1234
-        */
+        
         elseif (ctype_digit($stored) && $pw == $stored) {
 
-            // PERBARUI ke HASH agar aman
+      
             $new = password_hash($pw, PASSWORD_DEFAULT);
             $q = $conn->prepare("UPDATE users SET pw = ? WHERE id = ?");
             $q->bind_param("si", $new, $user['id']);
             $q->execute();
 
         } 
-        /*
-            3. Password MD5 → dukung sistem lama
-        */
+     
         elseif (strlen($stored) === 32 && $stored === md5($pw)) {
 
-            // Upgrade ke hash
+          
             $newHash = password_hash($pw, PASSWORD_DEFAULT);
             $u = $conn->prepare("UPDATE users SET pw = ? WHERE id = ?");
             $u->bind_param("si", $newHash, $user['id']);
@@ -85,7 +68,6 @@ if (isset($_POST['login'])) {
             exit;
         }
 
-        // LOGIN BERHASIL → Set session
         $_SESSION['user_login'] = $user['id'];
         $_SESSION['username'] = $user['nama'];
         $_SESSION['email'] = $user['email'];
@@ -95,8 +77,8 @@ if (isset($_POST['login'])) {
             $_SESSION['is_admin'] = true;
         }
 
-        // Redirect
-        if ($user['role'] === 'admin') header("Location: admin.php");
+    
+        if ($user['role'] === 'admin') header("Location: index.php");
         else header("Location: index.php");
         exit;
 
@@ -119,7 +101,6 @@ if (isset($_POST['login'])) {
     
     <div class="container">
 
-        <!-- LOGIN FORM -->
         <div class="form-box login">
             <form action="" method="POST">
                 <h1>Login</h1>
@@ -149,7 +130,6 @@ if (isset($_POST['login'])) {
             </form>
         </div>
 
-        <!-- REGISTER FORM -->
         <div class="form-box register">
             <form action="" method="POST">
                 <h1>Registration</h1>
