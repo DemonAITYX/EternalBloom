@@ -6,7 +6,6 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#hamper">Hampers</a></li>
                         <li><a href="#bouquet">Bouquets</a></li>
-                        <li><a href="#cart">Cart</a></li>
                     </ul>
                     <a href="login.php" class="profil">
                         <h3>Login</h3>
