@@ -125,7 +125,7 @@ $result = $stmt->get_result();
 <body>
 
 <div class="container">
-    <a class="back-btn" href="index.php#hamper">&lt; Back</a>
+    <a class="back-btn" href="index.php">&lt; Back</a>
 
     <?php while ($row = $result->fetch_assoc()) { ?>
         <div class="product-container">
